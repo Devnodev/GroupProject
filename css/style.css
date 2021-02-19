@@ -1,0 +1,220 @@
+
+/* REMOVE DEFAULT STYLING */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* BODY */
+
+body{
+    font-family: 'Lato', Arial, sans-serif;
+    
+}
+
+/* STATUS BAR */
+
+#topSection {
+    background-color: #2F2D2D;
+    height: 72px;
+padding: 20px 15px 8px 20px;
+position: -webkit-sticky; 
+position: sticky;
+top: 0;
+z-index: 2;
+}
+#statusBar {
+display: block;
+width: 100%;
+}
+#time {
+    color: #ffffff;
+    font-size: 15px;
+    float: left;
+    width: 30px;
+}
+
+#right-icons {
+    display: flex;
+    justify-content: space-between;
+float: right;  
+width: 70px;
+}
+#topNav {
+width: 100%;
+clear: both;
+padding-top: 15px;
+}
+input.textbox{
+    width: 252px;
+    height: 32px;
+    border-radius: 16px;
+    padding-left: 20px;
+}
+/* SEARCH AND FAV */
+#favorites {
+    width: 24px;
+    height: 20px;
+
+}
+
+
+/* HERO */
+
+#hero {
+background-image: url(../images/hero-bg.png); 
+background-size: cover ;
+background-repeat: no-repeat;   
+width: 100%;
+max-width: 100%;
+height: 192px;
+font-family: 'Prata, ,Georgia, serif';
+color: white;
+font-size: 23px;
+text-align: center;
+display: flex; 
+align-items: center;
+justify-content: center;
+line-height: 26px;;
+}
+
+
+
+/* ROW */
+.mainContent {
+padding: 30px;
+background: #F6F5F5;
+z-index: 1;
+}
+
+h2 {
+    font-size: 18px;
+    color: #DC565E;
+    font-family: 'Prata, ,Georgia, serif';
+    margin: 5px 0 20px;
+}
+
+.product {
+    margin-bottom: 30px; float: left; margin-right: 16px
+}
+
+.productImage {
+width: 122px;
+height: 152px;
+background: #ffffff;
+border: 0.3px solid #CFC5C5;
+border-radius: 8px;
+position: relative; /*to position the heart in this container*/
+}
+.productImage .heart { 
+    
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+img.bottle {
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    
+
+}
+.productDescription {
+    width: 110px; 
+    height: 30px;
+}
+.wineName, .winePrice {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px; max-height: 30px
+    color: #655E5E;
+    font-size: 12px;
+    margin: 5px;
+    font-weight: 300;
+}
+.winePrice {
+font-weight: 500; margin: 10px 5px; 
+}
+
+#bottomNav {
+    position: -webkit-sticky; 
+position: sticky;
+bottom: 0;
+    /* height: 77px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 20px;
+    align-items: baseline;
+    background: #ffffff;
+    border-top: 1px solid #DC565E}
+
+
+#bottomNav p {
+font-size: 10px;
+text-align: center;
+}
+
+.navItem img.reg{
+display: block;
+margin: 0 auto 8px;
+height: 22px;
+;
+}
+.navItem#camera{
+  width: 72px; 
+  height:72px; 
+  margin-top: -50px;
+}
+.row{
+display: flex;
+overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
