@@ -84,11 +84,18 @@ width: 100%;
 clear: both;
 padding-top: 15px;
 }
+form {
+    width: 290px;
+    display: inline-block;
+}
 input.textbox{
-    width: 252px;
+    width: 232px;
     height: 32px;
-    border-radius: 16px;
-    padding-left: 20px;
+    border-radius: 18px;
+    padding-left: 35px;
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 5% 50%;
 }
 /* SEARCH AND FAV */
 #favorites {
@@ -107,7 +114,7 @@ background-repeat: no-repeat;
 width: 100%;
 max-width: 100%;
 height: 192px;
-font-family: 'Prata, ,Georgia, serif';
+font-family: 'Prata', Georgia, serif;
 color: white;
 font-size: 23px;
 text-align: center;
@@ -157,8 +164,26 @@ img.bottle {
     display: block;
     margin: 0 auto;
     padding: 5px;
-    
-
+}
+img.plus {
+    display: block;
+    margin: 0 auto;
+    padding: 60px 5px;
+}
+p.sign-prompt{
+    margin-top: 30px;
+    font-size: 17px;
+    color: #655E5E;
+    width: 175px;
+    line-height: 22px;
+}
+button.ghost {
+    background: #ffffff;
+    border: 0.3px solid #FF8F72;
+    border-radius: 12px;
+    color: #DC565E;
+    padding: 5px 20px;
+    margin-top: 20px
 }
 .productDescription {
     width: 110px; 
@@ -212,7 +237,10 @@ display: flex;
 overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
 }
-
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 /* .row::after {
     content: "";
     clear: both;
